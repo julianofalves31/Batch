@@ -1,0 +1,1 @@
+forfiles -p “DIRETÓRIO_EX_C:\TEMP” -s -d –5 -c “cmd /c del /q @path”
