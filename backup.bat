@@ -58,8 +58,8 @@ if '%1'=='ELEV' (del "%vbsGetPrivileges%" 1>nul 2>nul  &  shift /1)
 ::START
 ::::::::::::::::::::::::::::
 cd\
-sqlcmd.exe -S SERVIDOR-NCR -U sa -P abc@1234 -Q "backup database ncrcolibri to disk = 'c:\backup\ncrcolibri.bak'"
+sqlcmd.exe -S {nome da maquina}-U {usuario} -P {senha} -Q "backup database ncrcolibri to disk = 'c:\backup\ncrcolibri.bak'"
 
-sqlcmd.exe -S SERVIDOR-NCR -U sa -P abc@1234 -Q "backup database master to disk = 'c:\backup\master.bak'"
+sqlcmd.exe -S {nome da maquina} -U {usuario} -P {senha} -Q "backup database master to disk = 'c:\backup\master.bak'"
 
-sqlcmd.exe -S SERVIDOR-NCR -U sa -P abc@1234 -Q "backup database fiscalgateway to disk = 'c:\backup\fiscal.bak'"
+sqlcmd.exe -S {nome da maquina} -U {usuario} -P {senha} -Q "backup database fiscalgateway to disk = 'c:\backup\fiscal.bak'"
